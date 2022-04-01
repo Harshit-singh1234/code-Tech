@@ -1,0 +1,23 @@
+public class object_creation {
+    int x = 10;
+    int y = 20;
+    int z = 30;
+
+    public static void show() {
+        System.out.println("im in the static function");
+    }
+
+    public void display() {
+        System.out.println("i'm in the function call");
+    }
+
+    public static void main(String[] args) {
+
+        object_creation myobj = new object_creation();
+        System.out.println("hey good morning");
+        show();// due to static method no need tp create object;
+        myobj.display();
+        System.out.println(myobj.x);
+    }
+
+}
